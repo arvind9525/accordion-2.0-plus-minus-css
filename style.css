@@ -1,0 +1,17 @@
+/ Accordion CSS /
+#faq-section .col-inner h1{cursor: pointer; border-bottom: 1px solid #000000; padding-bottom: 25px; padding-top: 25px; padding-right: 45px;}
+#faq-section .col-inner .ui-state-active h1{border-bottom: 1px solid #000000;}
+#faq-section .ui-corner-top .ui-icon{position: absolute; right: 30px; top: 50%; margin-top: -3px; content: ''; height: 0; width: 0; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid #000000;}
+#faq-section .ui-accordion-content{border-bottom: 1px solid #000000; padding-bottom: 25px; padding-top: 25px; padding-right: 45px;}
+#faq-section .ui-corner-top.ui-state-active .ui-icon{border-bottom: 7px solid #000000; border-top: 0;}
+#faq-section .ui-accordion-header{ padding-top: 0; padding-bottom: 0; position: relative;}
+
+/ JS code /
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+  $( function() {
+    $( "#faq-section .col-inner" ).accordion({
+      heightStyle: "content",
+    });
+  });
+</script>
